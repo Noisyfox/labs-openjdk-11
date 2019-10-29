@@ -550,11 +550,6 @@ void setProxyProperties(java_props_t *sProps) {
 
     CFRelease(dict);
 }
-#undef CHECK_PROXY
-
-    CFRelease(dict);
-}
-
 // TARGET_OS_IPHONE
 #else
 

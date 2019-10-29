@@ -67,5 +67,7 @@ static JNINativeMethod methods[] = {
 JNIEXPORT void JNICALL
 Java_java_lang_Thread_registerNatives(JNIEnv *env, jclass cls)
 {
+#ifndef STATIC_BUILD
     (*env)->RegisterNatives(env, cls, methods, ARRAY_LENGTH(methods));
+#endif
 }
